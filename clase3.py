@@ -1,3 +1,14 @@
+# git init (crear repositorio en pc)
+# git status (verificar lo que vamos a subir)
+# git add . (agregar archivo. se puede nombre en especifico)
+# git commit -m "comentario"
+# git config --global user.email lopezgg98@gmail.com
+# git config --global user.name BladSector
+# git branch -M main (subir a rama principal)
+# git remote add origin https://github.com/BladSector/Algoritmos-clase-3.git
+# git pull
+# git push -u origin main (sincronisacion del local y remoto)
+
 import sys
 #Ejercicios
 # 1. Escribe un programa que pida un número al usuario 
@@ -60,25 +71,25 @@ while True:
     try:
         print()
         print("(Escribe 'salir' para terminar el programa o 'siguiente' para pasar al siguiente ejercicio)")
-        N3 = input('3. Introduzca una calificacion (entre 0 y 100): ').lower()
+        C3 = input('3. Introduzca una calificacion (entre 0 y 100): ').lower()
         print('')
 
-        if N3 == 'salir':
+        if C3 == 'salir':
             print('Programa cerrado.')
             sys.exit()
-        if N3 == 'siguiente':
+        if C3 == 'siguiente':
             break
 
-        N3 = int(N3)
-        if N3 < 0 or N3 > 100:
+        C3 = int(C3)
+        if C3 < 0 or C3 > 100:
             print('Numero fuera del rango de calificacion') 
-        elif N3 >= 90:
+        elif C3 >= 90:
             print('Su calificacion es una "A"')
-        elif N3 >= 80:
+        elif C3 >= 80:
             print('Su calificacion es una "B"')
-        elif N3 >= 70:
+        elif C3 >= 70:
             print('Su calificacion es una "C"')
-        elif N3 >= 60:
+        elif C3 >= 60:
             print('Su calificacion es una "D"')
         else:
             print('Su calificacion es una "F"')
@@ -122,7 +133,7 @@ while True:
              print('Peso no valido. Intentelo de nuevo.')
              continue
          
-         if 18 <= E4 <= 65 and P4 >= 50:
+         elif 18 <= E4 <= 65 and P4 >= 50:
              print('Es apto para donar sangre.')
          else:
              print('No es apto para donar sangre.')
@@ -130,7 +141,16 @@ while True:
     except ValueError:
         print('No valido.')
 
-# 5.Escribe un programa que pida la temperatura exterior y la velocidad del viento, 
-# y luego imprima si es peligroso salir. 
-# Es peligroso si la temperatura es menor a 0°C 
-# o la velocidad del viento es mayor a 60 km/h.
+# 6.Escribe un programa que pida un número al usuario y luego imprima si ese 
+# número no es divisible por 5.
+
+
+
+# 7.Escribe un programa que pida tres números al usuario y luego imprima si al 
+# menos uno de ellos es mayor a 10 y, al mismo tiempo, todos son positivos.
+
+# 9.Escribe un programa que pida la cantidad de horas trabajadas y la paga por 
+# hora. Si la cantidad de horas trabajadas es más de 40 y la paga por hora es 
+# mayor o igual a $20, imprime "Recibe pago extra". Si la paga por hora es menor a 
+# $10 y no trabajó más de 40 horas, imprime "Pago insuficiente". En cualquier otro 
+# caso, imprime "Pago adecuado".
