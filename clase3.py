@@ -155,4 +155,3 @@ while True:
 # hora. Si la cantidad de horas trabajadas es más de 40 y la paga por hora es 
 # mayor o igual a $20, imprime "Recibe pago extra". Si la paga por hora es menor a 
 # $10 y no trabajó más de 40 horas, imprime "Pago insuficiente". En cualquier otro 
-# caso, imprime "Pago adecuado".
