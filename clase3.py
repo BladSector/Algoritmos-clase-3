@@ -9,6 +9,8 @@
 # git pull
 # git push -u origin main (sincronisacion del local y remoto)
 
+#new commit
+
 import sys
 #Ejercicios
 # 1. Escribe un programa que pida un número al usuario 
