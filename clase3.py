@@ -27,10 +27,10 @@ import sys
 # y luego imprima si ese número es mayor que 10.
 while True:
     try:
-        print('')
-        print("(Escribe 'salir' para terminar el programa o 'siguiente' para pasar al siguiente ejercicio)")
+
+        print("\n(Escribe 'salir' para terminar el programa o 'siguiente' para pasar al siguiente ejercicio)\n")
         N1=(input("1. Introduzca un numero: ")).lower()
-        print('')
+
         if N1 == 'salir':
              print('Programa cerrado.')
              sys.exit()
