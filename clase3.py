@@ -6,8 +6,11 @@
 # git config --global user.name BladSector
 # git branch -M main (subir a rama principal)
 # git remote add origin https://github.com/BladSector/Algoritmos-clase-3.git
-# git pull
+# git pull origin main(descasrgar datos del repository)
 # git push -u origin main (sincronisacion del local y remoto)
+# git remote set-url origin https://github.com/BladSector/Algoritmos-clase-3.git  (remote: Repository not found.)
+# git reset — hard (borrar datos locales y reemplazarlos por el repository)
+# git pull origin main --allow-unrelated-histories (fatal: refusing to merge unrelated histories).
 
 #new commit
 
