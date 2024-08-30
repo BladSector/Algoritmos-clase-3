@@ -1,18 +1,35 @@
 # git init (crear repositorio en pc)
+
+# ls (mostrar rutas).
+# cd (cambiar ruta)
+# pwd (mostrar ruta actual de mi terminal)
+# git remote add origin https://github.com/BladSector/Algoritmos-clase-3.git.
+# git remote -v (verificar conectividad)
+# git push -u origin master (sincronisacion del local y remoto)
+# git branch -M main (subir a rama principal main)
+
 # git status (verificar lo que vamos a subir)
 # git add . (agregar archivo. se puede nombre en especifico)
 # git commit -m "comentario"
 # git config --global user.email lopezgg98@gmail.com
 # git config --global user.name BladSector
+
+
 # git branch -M main (subir a rama principal)
 # git remote add origin https://github.com/BladSector/Algoritmos-clase-3.git
 # git pull origin main(descasrgar datos del repository)
 # git push -u origin main (sincronisacion del local y remoto)
 # git remote set-url origin https://github.com/BladSector/Algoritmos-clase-3.git  (remote: Repository not found.)
 # git reset — hard (borrar datos locales y reemplazarlos por el repository)
-# git pull origin main --allow-unrelated-histories (fatal: refusing to merge unrelated histories).
+# git pull origin main --allow-unrelated-histories 
+# git stash save –keep-index (fatal: refusing to merge unrelated histories).
 
 #new commit
+
+
+
+#new commit 3 prueba
+
 
 import sys
 #Ejercicios
@@ -21,10 +38,16 @@ import sys
 # y luego imprima si ese número es mayor que 10.
 while True:
     try:
+
         print('')
         print("(Escribe 'salir' para terminar el programa o 'siguiente' para pasar al siguiente ejercicio)")
         N1=(input("1. Introduzca un numero: ")).lower()
         print('')
+
+
+        print("\n(Escribe 'salir' para terminar el programa o 'siguiente' para pasar al siguiente ejercicio)\n")
+        N1=(input("1. Introduzca un numero: ")).lower()
+
         if N1 == 'salir':
              print('Programa cerrado.')
              sys.exit()
@@ -151,10 +174,80 @@ while True:
 
 
 
+
+while True:
+    try:
+         print()
+         print("(Escribe 'salir' para terminar el programa o 'siguiente' para pasar al siguiente ejercicio)")
+         N6 = input('6. Escribe un numero para saber si es divisible por 5: ').lower()
+        
+         if N6 =="salir":
+             sys.exit()
+         if N6 == "siguiente":
+             break
+         
+         N6 = int(N6)
+         if N6%5 == 0:
+             print(f"Su numero {N6} es divisible por 5.")
+         else:
+             print(f"Su numero {N6} no es divisible por 5")
+    except ValueError:
+        print("No valido.")     
+
+
 # 7.Escribe un programa que pida tres números al usuario y luego imprima si al 
 # menos uno de ellos es mayor a 10 y, al mismo tiempo, todos son positivos.
+
+while True:
+    try:
+        print()
+        print("(Escribe 'salir' para terminar el programa o 'siguiente' para pasar al siguiente ejercicio)")
+        print("7. Introduzca tres numeros cualquiera a continuacion: ")
+        N71 = input("Primer numero: ").lower()
+        if N71 == "salir":
+                sys.exit()
+        elif N71 == "continuar":
+            break
+
+        N72 = input("Segundo numero: ").lower()
+        if N72 == "salir":
+                sys.exit()
+        elif N72 == "continuar":
+            break
+
+        N73 = input("Tercer numero: ").lower()
+        if N73 == "salir":
+                sys.exit()
+        elif N73 == "continuar":
+            break
+
+        N71 = int(N71)
+        if N71 > 10:
+            print(f"Su numero {N71} es mayor a 10.")
+        N72 = int(N72)
+        if N72 > 10:
+            print(f"Su numero {N72} es mayor a 10.")
+        N73 = int(N73)
+        if N73 > 10:
+           print(f"Su numero {N73} es mayor a 10.")
+        else:
+            print("Todos sus numeros son positivos!")
+
+        if N71 < 0:
+            print(f"El numero {N71} no es positivo")
+        if N72 < 0:
+            print(f"El numero {N72} no es positivo")
+        if N73 < 0:
+            print(f"El numero {N73} no es positivo")   
+
+    except ValueError:
+        print("No valido.")
 
 # 9.Escribe un programa que pida la cantidad de horas trabajadas y la paga por 
 # hora. Si la cantidad de horas trabajadas es más de 40 y la paga por hora es 
 # mayor o igual a $20, imprime "Recibe pago extra". Si la paga por hora es menor a 
 # $10 y no trabajó más de 40 horas, imprime "Pago insuficiente". En cualquier otro 
+
+
+
+
